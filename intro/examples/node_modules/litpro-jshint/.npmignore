@@ -1,0 +1,6 @@
+tests
+test.js
+travis.yml
+ghpages
+node_modules
+*.md

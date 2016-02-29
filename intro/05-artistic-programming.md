@@ -1,4 +1,4 @@
-## Artistic programming
+# Artistic programming
 
 And so we reach the third and final level of our journey. The other two levels
 are pretty much complete in explaining them and how to use them. What follows
@@ -14,10 +14,94 @@ This is the level of complete artistry. We can write little mini-languages to
 make efficient input. We can use a wide variety of text transformations of one
 language to the next all smoothly in the code. 
 
+The basic command syntax uses pipe syntax. Instead of just a section name,
+such as `_"name"`, we can pipe the incoming text into a command, or series of
+commands, such as `_"name | cat  awesome, _"dude" | sub A, b"`. This would
+take the text in the block `name` and send it through the command `cat` which
+concatenates stuff together. In particular it would join the incoming text
+with awesome and the stuff in the `dude` section. Then that resulting text
+goes through the sub command and all instances of `A` get replaced with `b`.
+Note that section names can be referenced in the command arguments. 
 
-sub example
 
-md, jade example
+### Sub
+
+To start with, let's say we want to create functions for the arithmetic
+operators. That is, we want to be able to write `add(4, 5)` instead of `4+5`.
+In JavaScript, we could do
+
+    var add = function (a, b) {
+        return a + b;
+    }
+
+And that would be fine. We could then do that for subtraction, multiplication,
+and division. But that is a bit repetitive. So instead we can do
+
+    _"example operators.md" 
+
+And that generates the following in a file called ops.js.
+
+    _"buid ops.js"
+    
+This is not that exciting of an example. And there are a number of ways we
+could have approached this with a simple copy and paste being there. Indeed,
+the four lines of litpro code is copy and pasted (it is also possible to run
+some custom code to do this more elegantly, but this is a simple
+introduction). 
+
+But you may wonder what is the advantage? The creative effort is about the
+same level, but now all four are dependent on each other. This may be good, it
+may not be good. It is good if you later decide to modify this. For example,
+you may want to check that the operators are numbers. Or you may want to round
+the result or cast it into some other form. By modifying the originating
+function, we get all of them modified at once. That is, the benefit is in the
+maintenance. 
+
+The downside is that they are coupled. So, for example if we want to inject a
+test for division by zero, we need to add something to facilitate that. One
+solution is to put in a comment line that gets replaced with what you need. 
+
+    _"example op2.md"
+
+Turning into:
+
+    _"build ops2.js"
+
+This could easily become cumbersome. As is generally true with this style of
+programming, it is a matter of artistic choice as to which is the most useful
+and clear in any given situation. It is likely to evolve over time just as
+repeating similar code often involves into pulling it out to functions. This
+is just one of the stops along the way.  
 
 
+## Web
+
+As another example, let's say we are creating a web page. We want to have the
+content written in markdown, but we want to create the structure in jade.
+Let's presume that the commands to convert them are `md` and `jade`,
+respectively.
+
+    _"example web.md"
+
+This yields
+
+    _"build web.html"
+
+To run this, one needs to run the lprc.js file that defines these commands.
+There are other methods that we'll discuss later, but this is a useful method.  
+
+The lprc.js file is and it requires the modules markdown-it and jade. We also
+include jshint which was done to check the script that we snuck in there. 
+
+    _"example lprc.js"
+
+We will discuss a lot of what is going on in this example as time goes on. But
+notice how we can cut up our assembly of the material, run them through
+commands, and get a nice compiled output. 
+
+The backslashes are escaping the substitution in the first round as mixing
+jade with compiled HTML content does not lead to good results. So we compile
+the jade and then when that is ready, we call the compile command to run that
+through our standard compiler. In this example, we need to include the
+structure named section as the overarching section. 
 
