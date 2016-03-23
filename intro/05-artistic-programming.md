@@ -37,11 +37,11 @@ In JavaScript, we could do
 And that would be fine. We could then do that for subtraction, multiplication,
 and division. But that is a bit repetitive. So instead we can do
 
-    _"example operators.md" 
+    _"| example operators.md" 
 
 And that generates the following in a file called ops.js.
 
-    _"buid ops.js"
+    _"| build operators.md, ops.js"
     
 This is not that exciting of an example. And there are a number of ways we
 could have approached this with a simple copy and paste being there. Indeed,
@@ -61,11 +61,11 @@ The downside is that they are coupled. So, for example if we want to inject a
 test for division by zero, we need to add something to facilitate that. One
 solution is to put in a comment line that gets replaced with what you need. 
 
-    _"example op2.md"
+    _"| example op2.md"
 
 Turning into:
 
-    _"build ops2.js"
+    _"| build ops.md, ops2.js"
 
 This could easily become cumbersome. As is generally true with this style of
 programming, it is a matter of artistic choice as to which is the most useful
@@ -81,11 +81,11 @@ content written in markdown, but we want to create the structure in jade.
 Let's presume that the commands to convert them are `md` and `jade`,
 respectively.
 
-    _"example web.md"
+    _"| example web.md"
 
 This yields
 
-    _"build web.html"
+    _"| build web.md, web.html"
 
 To run this, one needs to run the lprc.js file that defines these commands.
 There are other methods that we'll discuss later, but this is a useful method.  
@@ -93,7 +93,7 @@ There are other methods that we'll discuss later, but this is a useful method.
 The lprc.js file is and it requires the modules markdown-it and jade. We also
 include jshint which was done to check the script that we snuck in there. 
 
-    _"example lprc.js"
+    _"| example lprc.js"
 
 We will discuss a lot of what is going on in this example as time goes on. But
 notice how we can cut up our assembly of the material, run them through

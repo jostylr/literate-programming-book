@@ -1,3 +1,5 @@
+-# The Basics
+
 # What is literate programming? 
 
 Literate programming is a way of organizing code developed in the late '70s by
