@@ -37,6 +37,7 @@ In JavaScript, we could do
 And that would be fine. We could then do that for subtraction, multiplication,
 and division. But that is a bit repetitive. So instead we can do
 
+{lang=markdown}
 <<(code/arp-operators.md)
 
 And that generates the following in a file called ops.js.
@@ -61,11 +62,11 @@ The downside is that they are coupled. So, for example if we want to inject a
 test for division by zero, we need to add something to facilitate that. One
 solution is to put in a comment line that gets replaced with what you need. 
 
-    _"| example op2.md"
+<<(part-1/ops2.md)
 
 Turning into:
 
-    _"| build ops.md, ops2.js"
+<<(part-1/ops2.js)
 
 This could easily become cumbersome. As is generally true with this style of
 programming, it is a matter of artistic choice as to which is the most useful
