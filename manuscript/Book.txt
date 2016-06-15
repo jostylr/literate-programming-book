@@ -1,6 +1,6 @@
 intro.txt
-01-what.txt
-02-litpro.txt
-03-semi-litpro.txt
-04-symphonic-programming.txt
-05-artistic-programming.txt
+what.md
+litpro.md
+semi-litpro.md
+symphonic-programming.md
+artistic-programming.txt

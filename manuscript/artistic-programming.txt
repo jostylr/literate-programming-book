@@ -37,11 +37,11 @@ In JavaScript, we could do
 And that would be fine. We could then do that for subtraction, multiplication,
 and division. But that is a bit repetitive. So instead we can do
 
-    _"| example operators.md" 
+<<(code/ap-operators.md)
 
 And that generates the following in a file called ops.js.
 
-    _"| build operators.md, ops.js"
+<<(code/ap-ops.js)
     
 This is not that exciting of an example. And there are a number of ways we
 could have approached this with a simple copy and paste being there. Indeed,

@@ -23,7 +23,8 @@ being the easiest and fitting with the name "literate".
 
 At the next level of understanding, it allows one to sculpt the code to fit
 the human mind. The most interesting bits can be placed first. Or the overall
-structure can be laid out first. Whatever makes more sense. Much like how a
+structure can be laid out first. Whatever makes more sense, it can be done
+that way. Much like how a
 story may be laid out in non-chronological order for maximum impact of the
 human reading it, so too does literate programming enable the organization of
 code for maximal human understanding by shedding the dependency on what the
@@ -35,13 +36,13 @@ files can combine to make a single or multiple output files. This allows us to
 not only reorganize code within a single file, but organize the code across
 the project. 
 
-We could for example, use a literate program in web development in which some
+We could, for example, use a literate program in web development in which some
 html widget, with its css and javascript, all live in a single literate
 program file but upon compiling, those pieces go to there separate various
-destinations. We could also choose to do the opposite of having javascript,
+destinations. We could also choose to do the opposite such as having javascript,
 say, in its own literate program, but then inject it (or a small, crucial
-subset of it)  into the html file for performance reasons. Fit the
-organization to the demands of the mental view of the project. 
+subset of it)  into the html file for performance reasons. We fit the
+organization of the project to the demands of the mental view of the project. 
 
 Related to this is the idea of a central project management file. Compile that
 literate program and it triggers the compilation of the entire project. But
@@ -60,11 +61,11 @@ description of an object and then translate that into a language specific
 object. We can have bits of markdown or jade and compile it into the same HTML
 document. We can create our own little mini-language for just that one bit of
 the project to reduce the amount of code written and have the literate program
-create the beautiful rendered version. 
+create the final rendered version. 
 
 We can also take almost common bits of code and programmatically change them
-as needed. This is a middle ground between copy-and-paste and full stripping
-out of a function. 
+as needed. This is a middle ground between copy-and-paste versus creating
+functions to implement common code.
 
 This third level is where the bulk of the effort of litpro was spent. It is
 not hard to do the first two levels, particularly if syntax is not too worried

@@ -31,7 +31,10 @@ into actual books.
 Here will be the table of contents in the sense of files for book.txt
 
     
-    _"sample"
+    _"part I"
+    _"part II"
+    _"part III"
+    _"part IV"
 
 
 [manuscript/Book.txt](# "save:| add.txt")
@@ -53,27 +56,43 @@ fails to capture the last line.
 [add.txt](# "define:")
 
 
-### Sample
+### Part I
 
-The sample PDF 
+The sample PDF corresponds to Part I which is free to read. It consists of the 80% case.  
     
     intro
-    01-what
-    02-litpro
-    03-semi-litpro
-    04-symphonic-programming
-    05-artistic-programming
-
+    what
+    litpro
+    semi-litpro
+    symphonic-programming
+    artistic-programming
 
 [manuscript/Sample.txt](# "save:| add.txt")
 
+### Part II
 
-## Reference
+These are more in-depth examples, demonstrating artistic programming in its
+fullest. 
 
-The reference section consists of directives, commands, subcommands, and maybe
-some other stuff. Each is in a directory of its own.
+    basic-workings
 
-They will then be organized alphabetically when compiled. 
+### Part III
+
+All the syntax defined, explained, and exemplified. The first four chapters
+are overviews with cross-links to later chapters that go in detail. 
+
+    core-syntax
+    commands
+    subcommands
+    directives
+    plug-ins
+
+### Part IV
+
+Applying this to making web stuff. There is a lot of front-end stuff to manage
+
+    web-overview
+    writeweb
 
 
 ##  Test
@@ -85,8 +104,8 @@ regime for litpro.
 
 ## Compiling
 
-We run litpro on each of the directory parts with a project.md in it. This has
-specific commands for how each directory is laid out.
-
-    pushd intro; litpro; popd; 
+In the directory section, we list each directory that we want to descend into.
+That directory is made up of markdown files that get processed, mainly looking
+for commands of `!CAPS:` at the beginning of a line with the rest of the line
+being whatever it needs to be. Generally, it gets code fenced. 
 

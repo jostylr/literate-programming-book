@@ -7,7 +7,7 @@ This is a book that specifically covers the author's tool for doing literate
 programming. The tool is [freely available via npm](https://www.npmjs.com/package/litpro), with [source code available on github](https://github.com/jostylr/litpro).
 
 The tool implements a version of Don Knuth's idea of literate programming. The
-basic idea of is to write code for being read and maintained rather than for
+basic idea is to write code for being read and maintained rather than for
 the need of the computer. One can reorder code, cut up code into different
 snippets, promote comments to a top level, and do arbitrary transformations to
 the input text before outputting for the code. 
