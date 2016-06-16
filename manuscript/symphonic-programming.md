@@ -193,25 +193,25 @@ load from two files and save to three.
 
 load.md is the main entry point. One would compile it with `litpro -s . load.md` The `-s` says to look for any other loaded in the current directory (rather than the default of `src`. 
 
-    _"| example load.md"
+<<(part-1/sp-load.md)
 
-load2.md has some nice bits.
+The above code loads up load2.md which has some nice bits.
 
-    _"| example load.md"
+<<(part-1/sp-load2.md)
 
 widget.js has some simple javacsript code. 
 
-    _"| build -s . load.md, widget.js"
+<<(part-1/sp-widget.js)
 
 widget.css has some css styling for the widget
 
-    _"| build -s . load.md, widget.css"
+<<(part-1/sp-widget.css)
 
 full.html has a full html with a widget embedded. In later sections, we will
 see how to embed something useful inside such code, but for now we just take
 the widget as a black box and put it in our code. 
 
-    _"| build -s . load.md, full.html"
+<<(part-1/sp-full.html)
 
 
 ## Functions or reordering

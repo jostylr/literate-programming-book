@@ -1,6 +1,6 @@
-intro.txt
+intro.md
 what.md
 litpro.md
 semi-litpro.md
 symphonic-programming.md
-artistic-programming.txt
+artistic-programming.md
