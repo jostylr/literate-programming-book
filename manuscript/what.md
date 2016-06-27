@@ -1,5 +1,7 @@
 -# The Basics
 
+What are we trying to do and how do we do it? This should be enough to get you going. 
+
 # What is literate programming? 
 
 Literate programming is a way of organizing code developed in the late '70s by
