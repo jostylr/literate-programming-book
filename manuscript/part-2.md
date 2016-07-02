@@ -2,6 +2,16 @@
 
 This is where we do a variety of specific examples of use. It mainly focuses on examples from the web stack. In particular, the programming is almost entirely JavasScript. 
 
+### Making a Command
+
+### Making a Directive
+
+### lprc.js
+
+### Making a Plugin
+
+### Making a Subcommand
+
 ### Constants
 
 We can define constants once with explanations and then put them into whatever files need them. 
@@ -46,4 +56,4 @@ Having fake data specified as well as expected output is also easy.
 
 ### Debugging
 
-Debugging can be supported by conditional commands. You can set this up as you wish. 
+Debugging can be supported by conditional commands. You can set this up as you wish.
