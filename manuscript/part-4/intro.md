@@ -12,7 +12,15 @@ Most of this applies to literate-programming core library, but there are directi
 
 #### Minor Blocks
 
-#### Block Substitutions
+#### References and Subsitutions
+
+References are what we refer to the chunks of code, or rather, what we call the names of those chunks. 
+
+Substitutions are the syntax saying that something else should go there. Only substitutions and their escaped versions cause a change in the code chunks. 
+
+Substitutions can have null references. The point of these would be the pipes and commands. 
+
+References can occur before the first pipe or as part of a command or as part of a directive. 
 
 #### Pipes
 
