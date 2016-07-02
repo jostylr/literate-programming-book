@@ -1,6 +1,6 @@
--# Cookbook
+# Cookbook #
 
-This is where we do a variety of specific examples of use. 
+This is where we do a variety of specific examples of use. It mainly focuses on examples from the web stack. In particular, the programming is almost entirely JavasScript. 
 
 ### Constants
 
@@ -24,15 +24,26 @@ Example: math algorithm
 
 ### Data Entry
 
-Dealing with little bits of data is a difficult problem. 
+Dealing with little bits of data is a difficult problem. Here we look at inline data entry using a quick split style as well as reading in data from an external file. This pertains more to generating written output, then code itself, but it could be needed there as well such as if you want to pull in secrets from a file outside of the repo and put it in the compiled code that is also stored outside of the repo. 
 
-n
+### Conditional Compiling
 
+We may want to do one thing or another depending on the compilation context, e.g., development vs production.
 
-4. Other language (js var-hyphen-style)
-5. Convenient forms (name value --> json) 
-6. Conditional compiling
-6. Full blown dsl
-7. Testing
-8. Debugging
+### Domain Specific Languages
 
+We can write full blown domain specific languages and have them translated at build time. Or you can use standard languages that get transformed, such as markdown into html. 
+
+### Linting
+
+We can lint pieces of our code. It would even be possible to lint the pieces in isolation to see what shared variables might pop up. 
+
+### Testing
+
+Testing should be easy. Here we give a strategy for testing little bits of code (unit testing) as well as testing as combine the pieces (integrated testing). 
+
+Having fake data specified as well as expected output is also easy. 
+
+### Debugging
+
+Debugging can be supported by conditional commands. You can set this up as you wish. 
