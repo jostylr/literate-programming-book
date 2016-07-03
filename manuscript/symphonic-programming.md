@@ -150,29 +150,25 @@ One can use any of the quotes to start a substitution, just use the same quote t
 
 ### Minor blocks
 
-A minor block is designed for little snippets that seem to minor to create
+A minor block is designed for little snippets that seem too minor to create
 another section heading, but that one wants to move out of the way anyway. In
-a markdown toc, these will not appear nor do they need to be unique. 
+a markdown toc, these will not appear nor do they need to be unique between different sections though they should be unique within one section. 
 
 A minor block is initiated with either a link whose title starts with a colon
 or one whose target is completely empty. Let's assume this is in section
 `bob`.
 
-`[jane](# ":")` would create section `bob:jane` while
-`[jack 2]()`  would create section `bob:jack 2`
+`[jane](# ":")` would create reference `bob:jane` while
+`[jack 2]()`  would create reference `bob:jack 2`
 
-Within section bob, we can reference it as `\_":jane"` or `\_":jack 2"` and
-outside of bob, we need the full syntax of `\_"bob:jane"` and `\_"bob:jack 2"`
+Within section bob, we can reference it as `":jane"` or `":jack 2"` and
+outside of bob, we need the full syntax of `"bob:jane"` and `"bob:jack 2"`
 
 We can also do a save directive using section names as such 
 `[whatever](#:jane "save:")` if we are in the bob section or
 `[whatever](#bob:jane "save:")` if not. 
 
-This works quite nicely in terms of being an actual link on GitHub version if
-it is just the heading. For example, 
-
-`[whatever](#bob-is-cool "save:")` will save the section "Bob is cool" and
-link to. 
+This works quite nicely in terms of being an actual link when viewed on GitHub for on-minor references. For example, `[whatever](#bob-is-cool "save:")` will save the section "Bob is cool" and link to it. 
 
 ### Other literate program files
 
@@ -180,10 +176,10 @@ To use other literate program files, we use the load directive. We then use a
 double colon syntax to refer to it. Let's assume we have a file called
 `cool.md`. Then we can load it in a litpro document using 
 `[great](cool.md "load:")`  and then reference section `bob:jane` in it using 
-`\_"great::bob:jane"` The load syntax has the alias as the linkname (bit in
+`_"great::bob:jane"` The load syntax has the alias as the linkname (bit in
 square brackets) but it can be omitted. In either case, the filename itself
 can be referenced. That is, in the above example we can also use
-`\_"cool.md::jane"`   
+`_"cool.md::jane"`   
 
 
 ### Full Example
