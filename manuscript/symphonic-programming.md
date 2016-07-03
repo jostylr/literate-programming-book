@@ -6,13 +6,13 @@ about this.
     a, b ....
     if (crazy) {
         // lots of lines
-        c = D;
+        c = a;
     } else if (slightlyCrazy) {
         // fewer lines
-        c = D;
+        c = b;
     } else {
         // very few lines
-        c = D;
+        c = d;
     }
 
 So we have a conditional with some complicated bodies. And maybe we want to
@@ -30,17 +30,17 @@ conditional flow. Typically, we would only have functions to do that role:
 
     function lots (a, b) {
         // lots of lines
-        return D;
+        return a;
     } 
     
     function fewer(a,b) {
         // fewer lines
-        return D;
+        return b;
     } 
 
     function few(a,b) {
         // very few lines
-        return D;
+        return d;
     }
 
 That works. But notice that we have introduced functions solely for the
@@ -52,14 +52,14 @@ In contrast, we can do the following with litpro.
 
     a, b ....
     if (crazy) {
-        \_"lots"
-        c = D;
+        _"lots"
+        c = a;
     } else if (slightlyCrazy) {
-        \_"fewer"
-        c = D;
+        _"fewer"
+        c = b;
     } else {
         _"few"
-        c = D;
+        c = d;
     }
 
     ## Lots
@@ -87,7 +87,7 @@ are powerful tools at times.
 ## Syntax
 
 The syntax for different blocks, at its simplest, is a header block making a
-new section and then referencing that section with `\_"section name"` in a
+new section and then referencing that section with `_"section name"` in a
 code block. For example, 
 
     Some text
@@ -96,7 +96,7 @@ code block. For example,
 
     We have some awesome code
 
-        Yay
+        Yay      
 
      but what? 
 
@@ -110,7 +110,7 @@ code block. For example,
 
         So jack says
 
-        \_"awesome details-jack"
+        _"awesome details-jack"
 
         And we get what we want
 
@@ -130,7 +130,7 @@ block, you need to use the fenced blocks.
 
 Some symbols are allowed in the heading. Given how it is used in the syntax,
 pipes are not allowed and quotes can lead to conflicts (obviously `## "Quote"`
-has problems with `\_""quote""` but should be fine with `\_'"Quote"'`
+has problems with `_""quote""` but should be fine with `_'"Quote"'`
 
 This syntax works pretty well, but there are a couple of more tricks to learn.
 In particular, it demonstrates that colons are not allowed in headings either
@@ -238,5 +238,4 @@ It is separation of concerns at its best. We have computer needs and we have
 human needs. We need to cater to both. Most paradigms try to balance the two
 needs simultaneously with various costs and trade-offs. This approach allows us
 to satisfy both constituents with the small price of an extra compile (or
-transpile) step. 
-
+transpile) step.
