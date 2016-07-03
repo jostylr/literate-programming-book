@@ -12,12 +12,12 @@ as the next form of the snippet.
 
 This is the level of complete artistry. We can write little mini-languages to
 make efficient input. We can use a wide variety of text transformations of one
-language to the next all smoothly in the code. 
+language to the next all smoothly in the code. We can weave in user-end documentation, tests, sanity checks, compile contexts, and whatever else we can dream of, to make the job of coding, and all of its ancillary tasks, efficient and enjoyable. 
 
-The basic command syntax uses pipe syntax. Instead of just a section name,
+The basic command syntax uses pipe syntax. Instead of just a reference,
 such as `_"name"`, we can pipe the incoming text into a command, or series of
 commands, such as `_"name | cat  awesome, _"dude" | sub A, b"`. This would
-take the text in the block `name` and send it through the command `cat` which
+take the text in the reference `name` and send it through the command `cat` which
 concatenates stuff together. In particular it would join the incoming text
 with awesome and the stuff in the `dude` section. Then that resulting text
 goes through the sub command and all instances of `A` get replaced with `b`.
@@ -44,7 +44,7 @@ And that generates the following in a file called ops.js.
 <<(part-1/ap-ops.js)
     
 This is not that exciting of an example. And there are a number of ways we
-could have approached this with a simple copy and paste being there. Indeed,
+could have approached this with a simple copy and paste being one of them. Indeed,
 the four lines of litpro code is copy and pasted (it is also possible to run
 some custom code to do this more elegantly, but this is a simple
 introduction). 
@@ -70,7 +70,7 @@ Turning into:
 This could easily become cumbersome. As is generally true with this style of
 programming, it is a matter of artistic choice as to which is the most useful
 and clear in any given situation. It is likely to evolve over time just as
-repeating similar code often involves into pulling it out to functions. This
+repeating similar code often evolves into pulling it out to functions. This
 is just one of the stops along the way.  
 
 
@@ -81,6 +81,7 @@ content written in markdown, but we want to create the structure in jade.
 Let's presume that the commands to convert them are `md` and `jade`,
 respectively.
 
+{format:markdown}
 <<(part-1/ap-web.md)
 
 This yields
@@ -88,9 +89,9 @@ This yields
 <<(part-1/ap-web.html)
 
 To run this, one needs to run the lprc.js file that defines these commands.
-There are other methods that we'll discuss later, but this is a useful method.  
+There are other methods that we'll discuss later, but this is perhaps the most useful method.  
 
-The lprc.js file is and it requires the modules markdown-it and jade. We also
+The lprc.js file requires the modules markdown-it and jade. We also
 include jshint which was done to check the script that we snuck in there. 
 
 <<(part-1/lprc.js)
@@ -103,5 +104,4 @@ The backslashes are escaping the substitution in the first round as mixing
 jade with compiled HTML content does not lead to good results. So we compile
 the jade and then when that is ready, we call the compile command to run that
 through our standard compiler. In this example, we need to include the
-structure named section as the overarching section. 
-
+structure named section as the overarching section.
