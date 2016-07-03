@@ -1,6 +1,8 @@
-# Cookbook #
+-# Cookbook
 
 This is where we do a variety of specific examples of use. It mainly focuses on examples from the web stack. In particular, the programming is almost entirely JavasScript. 
+
+
 
 ### Constants
 
