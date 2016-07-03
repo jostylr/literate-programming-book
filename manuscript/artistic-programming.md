@@ -82,7 +82,7 @@ content written in markdown, but we want to create the structure in jade.
 Let's presume that the commands to convert them are `md` and `jade`,
 respectively.
 
-{lang="text"}
+{lang=text}
 <<(part-1/ap-web.md)
 
 This yields
