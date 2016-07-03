@@ -210,11 +210,10 @@ and full.html:
 
 ## Functions or reordering
 
-A common point of debate is whether this reordering is significant. They often
-argue that in modern languages, the ability to define functions in different
-places allowed one to shift the code elsewhere. 
+A common point of debate is whether this reordering is significant. The argument
+is that in modern languages, the ability to define functions after they have been called  allows one to shift the code elsewhere. 
 
-While true, this muddles the role of functions a bit. Functions are best used
+While true, this muddies the role of functions a bit. Functions are best used
 to be repeated bits of code that are called over and over. In old JavaScript,
 functions are also the only way to have scoped variables, but with the `let`
 keyword, that has changed. Both are considerations for the computer and are
