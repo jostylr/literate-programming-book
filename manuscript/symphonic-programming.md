@@ -187,25 +187,23 @@ can be referenced. That is, in the above example we can also use
 Here we have a full example with the different syntaxes being used. We will
 load from two files and save to three.
 
-load.md is the main entry point. One would compile it with `litpro -s . load.md` The `-s` says to look for any other loaded in the current directory (rather than the default of `src`. 
+load.md is the main entry point. One would compile it with `litpro -s . load.md` The `-s` says to look for any other literate document to be loaded in the current directory; the default is `src`. 
 
 <<(part-1/sp-load.md)
 
-The above code loads up load2.md which has some nice bits.
+The above code loads up load2.md which has some nice bits in it. 
 
 <<(part-1/sp-load2.md)
 
-widget.js has some simple javacsript code. 
+When compiled, we get widget.js:
 
 <<(part-1/sp-widget.js)
 
-widget.css has some css styling for the widget
+widget.css:
 
 <<(part-1/sp-widget.css)
 
-full.html has a full html with a widget embedded. In later sections, we will
-see how to embed something useful inside such code, but for now we just take
-the widget as a black box and put it in our code. 
+and full.html:
 
 <<(part-1/sp-full.html)
 
