@@ -2,7 +2,9 @@
 
 This is where we do a variety of specific examples of use. It mainly focuses on examples from the web stack. In particular, the programming is almost entirely JavasScript. 
 
+### Syntax
 
+The core syntax explained.
 
 ### Constants
 
@@ -10,20 +12,27 @@ We can define constants once with explanations and then put them into whatever f
 
 ### Eval
 
+How to run some JavaScript
+
 ### Boiler Plate
 
 If you have need of boiler pate, then we can do that with some substituions for templating it as well.
 
-
 ### Making a Command
 
+Commands are very useful. This is how to make them.
+
 ### Making a Directive
+
+Inline custom directives are not that useful, but it can be insightful in going towards making plugins. 
 
 ### Project Files
 
 Often there are other files needing managing for a project other than just code. For example,  .gitignore, readme, package.json, ... These can all live in a single literate programming document tht generates these files. It could also be setup to have variables that you define once and then use when needed, such as the version number. 
 
 ### Making a lprc.js file
+
+What constitutes a lprc.js file. 
 
 ### Other languages
 
@@ -35,6 +44,8 @@ Example: math algorithm
 
 ### Making a Plugin
 
+Making a plugin leads to good consistent behavior. 
+
 ### Data Entry
 
 Dealing with little bits of data is a difficult problem. Here we look at inline data entry using a quick split style as well as reading in data from an external file. This pertains more to generating written output, then code itself, but it could be needed there as well such as if you want to pull in secrets from a file outside of the repo and put it in the compiled code that is also stored outside of the repo. 
@@ -43,16 +54,20 @@ Dealing with little bits of data is a difficult problem. Here we look at inline 
 
 We may want to do one thing or another depending on the compilation context, e.g., development vs production.
 
-
 ### Domain Specific Languages
 
 We can write full blown domain specific languages and have them translated at build time. Or you can use standard languages that get transformed, such as markdown into html. 
+
+### Making a Subcommand
+
 
 ### Linting
 
 We can lint pieces of our code. It would even be possible to lint the pieces in isolation to see what shared variables might pop up. 
 
-### Making a Subcommand
+
+### h5 and h6 Headers
+
 
 ### Testing
 
