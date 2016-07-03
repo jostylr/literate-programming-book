@@ -15,14 +15,11 @@ heading or a code block is what Litpro considers it to be. Some of the syntax
 choices have been constrained by following this format, but for the most part,
 these constraints have been most welcomed.
 
-Litpro is written in JavaScript. The command-line tool runs using
-[node.js](https://nodejs.org/en/) and can be installed using 
-`npm install -g litpro`.  This is good for explorations and initializations.
-Use it just as `litpro filename`.
+Litpro is written in JavaScript. The command-line tool runs using [node.js](https://nodejs.org/en/) and can be installed using `npm install -g litpro`.  This is good for explorations and initializations. Use it by using the command `litpro filename`.
 
-Any serious use of the tool for the project should have litpro as a
+Any serious use of the tool for the project should have litpro, strictly versioned, as a
 development dependency in the package.json file and refer to it that way. When
-installed as a dependency, the command can be located from the root directory
+installed as a dependency, the command can be located from the top directory
 as `node_modules/.bin/litpro`
 
 To initiate a package.json file and put litpro as a dev dependency try
@@ -67,7 +64,3 @@ issue.
 One possible solution to this is to use named language types for fenced code
 blocks and, if the editor is made aware of it, using that to do code
 completion, at least of the canonical language features.
-
-
-
-
