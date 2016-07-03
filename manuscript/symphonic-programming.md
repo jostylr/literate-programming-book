@@ -189,7 +189,7 @@ load from two files and save to three.
 
 load.md is the main entry point. One would compile it with `litpro -s . load.md` The `-s` says to look for any other loaded in the current directory (rather than the default of `src`. 
 
-<<(part-1/sp-load.md)
+![load.md](part-1/sp-load.md)
 
 The above code loads up load2.md which has some nice bits.
 
