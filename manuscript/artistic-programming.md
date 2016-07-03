@@ -61,6 +61,7 @@ The downside is that they are coupled. So, for example if we want to inject a
 test for division by zero, we need to add something to facilitate that. One
 solution is to put in a comment line that gets replaced with what you need. 
 
+{lang="text"}
 <<(part-1/ap-ops2.md)
 
 Turning into:
@@ -81,7 +82,7 @@ content written in markdown, but we want to create the structure in jade.
 Let's presume that the commands to convert them are `md` and `jade`,
 respectively.
 
-{lang="markdown"}
+{lang="text"}
 <<(part-1/ap-web.md)
 
 This yields
