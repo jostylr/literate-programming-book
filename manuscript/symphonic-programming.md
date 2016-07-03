@@ -102,6 +102,7 @@ code block. For example,
 
      ```
      yeah
+     
      ```
 
      ## Importing
@@ -121,6 +122,7 @@ The above snippet will create
         
         Yay
         yeah
+        
 
         And we get what we want
 
@@ -133,20 +135,18 @@ pipes are not allowed and quotes can lead to conflicts (obviously `## "Quote"`
 has problems with `_""quote""` but should be fine with `_'"Quote"'`
 
 This syntax works pretty well, but there are a couple of more tricks to learn.
-In particular, it demonstrates that colons are not allowed in headings either
-as they have been co-opted for something else. 
+In particular, colons are not allowed in headings either
+as they have been co-opted for minor blocks, discussed below.
 
-The available headers are those that convert into h1 to h4 headers, namely 
-`#, ##, ###, ####` or either of the underline heading syntax. h5 and h6
+The available markdown header syntaxes are those that convert into h1 to h4 headers, namely 
+`#, ##, ###, ####` or either of the underline heading syntax. Those headers become references to the code in their blocks. h5 and h6
 headers are reserved for something else which is discussed later.
 
-Header names should be unique. No guarantees as to what happens with repeated
-header names is given though most likely it will concatenate the code blocks.
+References should be unique. If you reuse the same reference name, then it will most likely concatenate though it might replace or ignore.  h5 and h6 headers can be repeated, as will be discussed later. 
 
-One can refer to the same block as many times as one likes.
+One can use the same reference as many times as one likes.
 
-One can use any of the quotes to start and the matching style to end: `"`,
-`'`, `` ` ``
+One can use any of the quotes to start a substitution, just use the same quote to end `"`, `'`, `` ` ``
 
 ### Minor blocks
 
