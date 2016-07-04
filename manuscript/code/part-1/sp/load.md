@@ -1,7 +1,7 @@
 # Full HTML
 
 Here we are building an HTML page. We will use a
-[widget](sp-load2.md "load:") that comes from another literate program. 
+[widget](load2.md "load:") that comes from another literate program. 
 
     <html>
         <head>
@@ -15,4 +15,4 @@ Here we are building an HTML page. We will use a
         </body>
     </html>
 
-[sp-full.html](# "save:")
+[full.html](# "save:")
