@@ -17,7 +17,7 @@
 
     };    
  
-[ap-lprc.js](# "save:")
+[lprc.js](# "save:")
 
 [modules]()
 
