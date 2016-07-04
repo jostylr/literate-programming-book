@@ -15,7 +15,7 @@ the best to do it, but there you have it.
         }
     }
 
- When done we will save it in [ap-ops2.js](#math-ops "save:")
+ When done we will save it in [ops2.js](#math-ops "save:")
 
 ## Math ops
 
