@@ -43,6 +43,6 @@ documented, from the format to the commands, directives, and subcommands.
 Part V is not included, but links are provided to PDFs of the various literate
 programs that make up this tool. Yes, the tool compiles itself.
 
-A note on terminology. I use the term `compile` because this transforms source code from one thing to another. Often it will be `transpiling`, that is, transforming from one language to another on the same level of abstraction, but there is nothing inherent about the process that limits us to transpiling. You could set it up to generate machien code, if you really want to. 
+A note on terminology. I use the term `compile` because this transforms source code from one thing to another. Often it will be `transpiling`, that is, transforming from one language to another on the same level of abstraction, but there is nothing inherent about the process that limits us to transpiling. You could set it up to generate machine code, if you really want to. 
 
 {mainmatter}
