@@ -1,10 +1,5 @@
 module.exports = function (Folder, args) {
 
-    args.src = ".";
-
-    args.build = ".";
-
-
     if (!Folder.prototype.local) {
         Folder.prototype.local = {};
     }
