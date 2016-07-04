@@ -60,6 +60,7 @@ We can write full blown domain specific languages and have them translated at bu
 
 ### Making a Subcommand
 
+These allow for doing complex actions in arguments. These are different from commands that expect to be as part of a pipe flow. 
 
 ### Linting
 
@@ -68,12 +69,17 @@ We can lint pieces of our code. It would even be possible to lint the pieces in 
 
 ### h5 and h6 Headers
 
+These are headers that generate path-escaped references using the most recent main block reference as the root path. 
 
 ### Testing
 
 Testing should be easy. Here we give a strategy for testing little bits of code (unit testing) as well as testing as combine the pieces (integrated testing). 
 
 Having fake data specified as well as expected output is also easy. 
+
+### Documentation
+
+While literate programming is designed to be the documentation for the maintenance programmer, there is still the little issue of user documentation. While that may call for a separate document, it could be included in the same literate program as well using the h5 and h6 mechanism. 
 
 ### Debugging
 
