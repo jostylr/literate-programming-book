@@ -1,7 +1,7 @@
 # Saying Hi
 
 We want to write a little javascript command that says hi, waits one second,
-and then says bye. We will save it in [slp-teens.js](# "save:")
+and then says bye. We will save it in [teens.js](# "save:")
 
 Greetings are great, right?
 
