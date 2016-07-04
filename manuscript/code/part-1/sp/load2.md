@@ -4,8 +4,8 @@ Here we define a widget. This widget will be amazing!
 
 We will save two files from here 
 
-* [sp-widget.js](#js "save:")
-* [sp-widget.css](#css-for-widget "save:")
+* [widget.js](#js "save:")
+* [widget.css](#css-for-widget "save:")
 
 ## Files link
 
