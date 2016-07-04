@@ -38,11 +38,11 @@ And that would be fine. We could then do that for subtraction, multiplication,
 and division. But that is a bit repetitive. So instead we can do
 
 {lang=text}
-<<(part-1/ap-operators.md)
+<<(code/part-1/ap/operators.md)
 
 And that generates the following in a file called ops.js.
 
-<<(part-1/ap-ops.js)
+<<(code/part-1/ap/ops.js)
     
 This is not that exciting of an example. And there are a number of ways we
 could have approached this with a simple copy and paste being one of them. Indeed,
@@ -63,11 +63,11 @@ test for division by zero, we need to add something to facilitate that. One
 solution is to put in a comment line that gets replaced with what you need. 
 
 {lang=text}
-<<(part-1/ap-ops2.md)
+<<(code/part-1/ap/ops2.md)
 
 Turning into:
 
-<<(part-1/ap-ops2.js)
+<<(code/part-1/ap/ops2.js)
 
 This could easily become cumbersome. As is generally true with this style of
 programming, it is a matter of artistic choice as to which is the most useful
@@ -84,11 +84,11 @@ Let's presume that the commands to convert them are `md` and `jade`,
 respectively.
 
 {lang="text"}
-<<(part-1/ap-web.md)
+<<(code/part-1/ap/web.md)
 
 This yields
 
-<<(part-1/ap-web.html)
+<<(code/part-1/ap/web.html)
 
 To run this, one needs to run the lprc.js file that defines these commands.
 There are other methods that we'll discuss later, but this is perhaps the most useful method.  
@@ -96,7 +96,7 @@ There are other methods that we'll discuss later, but this is perhaps the most u
 The lprc.js file requires the modules markdown-it and jade. We also
 include jshint which was done to check the script that we snuck in there. 
 
-<<(code/part-1/ap/lprc.js)
+<<(code/part-1/ap/web-lprc.js)
 
 We will discuss a lot of what is going on in this example as time goes on. But
 notice how we can cut up our assembly of the material, run them through
