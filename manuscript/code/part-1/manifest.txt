@@ -1,11 +1,14 @@
 ap/operators.md 
-	ops.js
+	ap/ops.js
 ap/ops2.md
-	ops2.js
+	ap/ops2.js
 ap/web.md
-	web.html
+	ap/web.html
 ap/web-lprc.md
-	web-lprc.js
+	ap/web-lprc.js
 slp/simple.md
-
+	slp/teens.js
 sp/load.md
+	sp/widget.js
+    sp/widget.css
+    sp/full.html
