@@ -189,23 +189,23 @@ load from two files and save to three.
 
 load.md is the main entry point. One would compile it with `litpro -s . load.md` The `-s` says to look for any other literate document to be loaded in the current directory; the default is `src`. 
 
-<<(part-1/sp-load.md)
+<<(code/part-1/sp/load.md)
 
 The above code loads up load2.md which has some nice bits in it. 
 
-<<(part-1/sp-load2.md)
+<<(code/part-1/sp/load2.md)
 
 When compiled, we get widget.js:
 
-<<(part-1/sp-widget.js)
+<<(code/part-1/sp/widget.js)
 
 widget.css:
 
-<<(part-1/sp-widget.css)
+<<(code/part-1/sp/widget.css)
 
 and full.html:
 
-<<(part-1/sp-full.html)
+<<(code/part-1/sp/full.html)
 
 
 ## Functions or reordering
