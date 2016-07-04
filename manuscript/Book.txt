@@ -4,6 +4,6 @@ litpro.md
 semi-litpro.md
 symphonic-programming.md
 artistic-programming.md
-part-2.md
-part-3.md
+part-2/intro.md
+part-3/intro.md
 part-4/intro.md
