@@ -96,7 +96,7 @@ There are other methods that we'll discuss later, but this is perhaps the most u
 The lprc.js file requires the modules markdown-it and jade. We also
 include jshint which was done to check the script that we snuck in there. 
 
-<<(part-1/lprc.js)
+<<(code/part-1/ap/lprc.js)
 
 We will discuss a lot of what is going on in this example as time goes on. But
 notice how we can cut up our assembly of the material, run them through
