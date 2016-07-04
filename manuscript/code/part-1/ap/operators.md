@@ -8,7 +8,7 @@ We start with a basic form using addition
         return a ?? b;
     }
 
- When done we will save it in [ap-ops.js](#math-ops "save:")
+ When done we will save it in [ops.js](#math-ops "save:")
 
 ## Math ops
 
