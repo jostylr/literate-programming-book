@@ -6,6 +6,10 @@ Most plugins are just a thin layer of wrapping over someone else's carefully wri
 
 We'll do a few case studies of plugins
 
+## Independent
+
+Using nothing, creating whatever. 
+
 ## Jade
 
 Very simple
