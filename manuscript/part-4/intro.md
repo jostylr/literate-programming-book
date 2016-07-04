@@ -36,6 +36,8 @@ References can occur before the first pipe or as part of a command or as part of
 
 ### Subcommands
 
+### Command-line
+
 ### Plugins
 
 ### lprc.js
