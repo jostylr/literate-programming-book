@@ -17,7 +17,7 @@
 
     };    
  
-[lprc.js](# "save:")
+[web-lprc.js](# "save:")
 
 [modules]()
 
