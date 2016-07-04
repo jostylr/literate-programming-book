@@ -2,7 +2,7 @@
 
 We are going to make a web page. 
 
-[ap-web.html](#structure "save:|log | jade | compile structure ")
+[web.html](#structure "save:|log | jade | compile structure ")
 
 ## Structure
 
