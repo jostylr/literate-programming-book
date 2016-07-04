@@ -1,13 +1,5 @@
 module.exports = function (Folder, args) {
 
-    if (args.file.length === 0) {
-        args.file = ["ap-operators.md", 
-                "ap-ops2.md",
-                "ap-web.md",
-                "slp-simple.md",
-                "sp-load.md"]; 
-    }
-
     args.src = ".";
 
     args.build = ".";
