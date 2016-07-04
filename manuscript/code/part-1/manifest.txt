@@ -1,0 +1,11 @@
+ap/operators.md 
+	ops.js
+ap/ops2.md
+	ops2.js
+ap/web.md
+	web.html
+ap/web-lprc.md
+	web-lprc.js
+slp/simple.md
+
+sp/load.md
