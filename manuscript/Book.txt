@@ -41,4 +41,5 @@ part-4/subcommands.md
 part-4/command-line.md
 part-4/plugins.md
 part-4/lprc-js.md
+part-4/compiling.md
 part-5/intro.md
