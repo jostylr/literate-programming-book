@@ -37,18 +37,20 @@ find its repository at [litpro](https://github.com/jostylr/litpro)
 
 The command-line interface is a thin wrapper around a library which is
 platform agnostic (hopefully). The hope is to one day have a browser based
-version and the decoupling of the library from that will be most useful. The
+version and the decoupling of the library from the command-line will be most useful to that end. The
 library can be found at 
 [literate-programming-lib](https://github.com/jostylr/literate-programming-lib)
 
-There are also plugins available. The convention is to call them `litpro-...`
+There are also some plugins available. The convention is to call them `litpro-...`
 For example `litpro-jshint` implements a jshint command for applying that
 library to JavaScript code in order to find likely errors.
 
-There is an older version called 
-[literate-programming](https://github.com/jostylr/literate-programming) In due
-time, this will be replaced with a fat litpo command client which will be
-suitable for web development with batteries included. 
+But there is often very little that needs to be done to use an external node module. Thus, there is not a need to have very many plugins. Instead, we can write the code needed out in the configuration file. 
+
+There is one other version which is called 
+[literate-programming](https://github.com/jostylr/literate-programming)
+This was the original client, but it has been completely replaced with litpro powering it. It does differ from litpro in that it comes with "batteries included" for web development. While it is more than impossible to include much of what is used in web development, this does attempt to include some of those modules found most useful by the author. At the present time, they include a markdown compiler, jshint, some beautifiers and some minifiers, pug (formerly jade), and postcss. 
+
 
 Much of the inspiration for this tool comes from web development. The number
 of different languages and tools involved in web development coupled with best
