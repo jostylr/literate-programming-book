@@ -193,7 +193,7 @@ load.md is the main entry point. One would compile it with `litpro -s . load.md`
 
 The above code loads up load2.md which has some nice bits in it. 
 
-{lang="markdown"}
+{lang="text"}
 <<(code/part-1/sp/load2.md)
 
 When compiled, we get widget.js:
