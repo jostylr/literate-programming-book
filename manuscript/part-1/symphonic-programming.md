@@ -142,11 +142,11 @@ The available markdown header syntaxes are those that convert into h1 to h4 head
 `#, ##, ###, ####` or either of the underline heading syntax. Those headers become references to the code in their blocks. h5 and h6
 headers are reserved for something else which is discussed later.
 
-References should be unique. If you reuse the same reference name (the same h1 to h4 header twice in the same file), then it will concatenate the blocks.  h5 and h6 headers can be repeated, as will be discussed later. 
+References should be unique. If you reuse the same reference name (the same h1 to h4 header twice in the same file), then it will concatenate the blocks.  h5 and h6 headers can be repeated without them being combined, as will be discussed later. 
 
 One can use the same reference as many times as one likes.
 
-One can use any of the quotes to start a substitution, just use the same quote to end `"`, `'`, `` ` ``
+One can use any of the quotes (`"`, `'`, `` ` ``) to start a substitution, just use the same quote to end.
 
 ### Minor blocks
 
@@ -168,7 +168,7 @@ We can also do a save directive using section names as such
 `[whatever](#:jane "save:")` if we are in the bob section or
 `[whatever](#bob:jane "save:")` if not. 
 
-This works quite nicely in terms of being an actual link when viewed on GitHub for on-minor references. For example, `[whatever](#bob-is-cool "save:")` will save the section "Bob is cool" and link to it. 
+This works quite nicely (for headers, not minors) in terms of being an actual link when viewed on GitHub for on-minor references. For example, `[whatever](#bob-is-cool "save:")` will save the section "Bob is cool" and link to it. 
 
 ### Other literate program files
 
