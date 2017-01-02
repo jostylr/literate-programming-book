@@ -11,9 +11,9 @@ module.exports = function (Folder, args) {
 
     require('litpro-jshint')(Folder, args);
 
-    var jade = require('jade');
+    var jade = require('pug');
     
-    Folder.sync("jade" , function (code, args) {
+    Folder.sync("pug" , function (code, args) {
         options = args.join(",").trim();
         if (options) {
             options = JSON.parse(options);

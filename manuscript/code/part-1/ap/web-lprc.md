@@ -21,27 +21,27 @@
 
 [modules]()
 
-    _":jade"
+    _":pug"
 
     _":md"
 
 
 
-[jade]()    
+[pug]()    
 
-Jade converts the jade syntax into html. It is mainly used for structures as
-opposed to content. `jade text...|jade`
+Pug converts the pug syntax into html. It is mainly used for structures as
+opposed to content. `some pug text...|pug`
 
-    var jade = require('jade');
+    var pug = require('pug');
 
-    Folder.sync("jade" , function (code, args) {
+    Folder.sync("pug" , function (code, args) {
         options = args.join(",").trim();
         if (options) {
             options = JSON.parse(options);
         } else {
             options = {'pretty':true};
         }
-        return jade.render(code, options); 
+        return pug.render(code, options); 
     });
 
 
