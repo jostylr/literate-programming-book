@@ -28,6 +28,8 @@ human reading it, so too does literate programming enable the organization of
 code for maximal human understanding by shedding the dependency on what the
 computer requires for organization. 
 
+Just as humans may disagree on rather a story is told well so to does this increase the potential conflicts between reader and author of code. It becomes dependent on the author to try and think in the perspective of the reader as to how to present it well enough to the expected audience. This is not an easy task. 
+
 This is the level of arbitrary ordering of snippets. We can go even further
 and have arbitrary input and output files. That is, multiple literate program
 files can combine to make a single or multiple output files. This allows us to
