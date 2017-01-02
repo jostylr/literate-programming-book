@@ -79,8 +79,8 @@ is just one of the stops along the way.
 ## Web
 
 As another example, let's say we are creating a web page. We want to have the
-content written in markdown, but we want to create the structure in jade.
-Let's presume that the commands to convert them are `md` and `jade`,
+content written in markdown, but we want to create the structure in [pug](https://pugjs.org/) (formerly the jade language).
+Let's presume that the commands to convert them are `md` and `pug`,
 respectively.
 
 {lang="text"}
@@ -90,10 +90,12 @@ This yields
 
 <<(code/part-1/ap/web.html)
 
-To run this, one needs to run the lprc.js file that defines these commands.
+The easiest way to run this is with `literate-programming` which has both markdown and pug included. 
+
+But to run this with `litpro`, one needs to use the lprc.js file that defines these commands.
 There are other methods that we'll discuss later, but this is perhaps the most useful method.  
 
-The lprc.js file requires the modules markdown-it and jade. We also
+The lprc.js file requires the modules markdown-it and pug. We also
 include jshint which was done to check the script that we snuck in there. 
 
 <<(code/part-1/ap/web-lprc.js)
@@ -103,7 +105,7 @@ notice how we can cut up our assembly of the material, run them through
 commands, and get a nice compiled output. 
 
 The backslashes are escaping the substitution in the first round as mixing
-jade with compiled HTML content does not lead to good results. So we compile
-the jade and then when that is ready, we call the compile command to run that
+pug with compiled HTML content does not lead to good results. So we compile
+the pug and then when that is ready, we call the compile command to run that
 through our standard compiler. In this example, we need to include the
 structure named section as the overarching section.
