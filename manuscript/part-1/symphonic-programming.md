@@ -142,7 +142,7 @@ The available markdown header syntaxes are those that convert into h1 to h4 head
 `#, ##, ###, ####` or either of the underline heading syntax. Those headers become references to the code in their blocks. h5 and h6
 headers are reserved for something else which is discussed later.
 
-References should be unique. If you reuse the same reference name, then it will most likely concatenate though it might replace or ignore.  h5 and h6 headers can be repeated, as will be discussed later. 
+References should be unique. If you reuse the same reference name (the same h1 to h4 header twice in the same file), then it will concatenate the blocks.  h5 and h6 headers can be repeated, as will be discussed later. 
 
 One can use the same reference as many times as one likes.
 
