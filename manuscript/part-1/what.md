@@ -58,7 +58,7 @@ together in a harmonious fashion.
 The third level is complete and arbitrary control of the code. At this stage,
 we can run snippets through any process we want. We can write a JSON
 description of an object and then translate that into a language specific
-object. We can have bits of markdown or jade and compile it into the same HTML
+object. We can have bits of markdown or pug and compile it into the same HTML
 document. We can create our own little mini-language for just that one bit of
 the project to reduce the amount of code written and have the literate program
 create the final rendered version. 
