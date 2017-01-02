@@ -31,17 +31,13 @@ approach.
 
 Part III focuses on this as a tool for the web environment. The web stack is a
 mess of different technologies, optimizations, and many files. The tool can
-handle all of this and this is the place to explain it in detail. We conclude
-the part with an explanation of the author's [writeweb service](https://writeweb.net) (still in development),
-which is an experimental tool to allow literate programming compiling on a
-server. This is dangerous as the compilations can run arbitrary code, but
-hopefully sufficient precautions have been taken. 
+handle all of this and this is the place to explain it in detail. 
 
 Part IV is a reference section. Every piece of syntax is
 documented, from the format to the commands, directives, and subcommands. 
 
 Part V is not included, but links are provided to PDFs of the various literate
-programs that make up this tool. Yes, the tool compiles itself.
+programs that make up this tool. Yes, the tool compiles itself. It lightly discusses the structure of the tools. 
 
 A note on terminology. I use the term `compile` because this transforms source code from one thing to another. Often it will be `transpiling`, that is, transforming from one language to another on the same level of abstraction, but there is nothing inherent about the process that limits us to transpiling. You could set it up to generate machine code, if you really want to. You can read a little more about [compiling vs. transpiling](https://www.stevefenton.co.uk/2012/11/compiling-vs-transpiling/) if you like. 
 
