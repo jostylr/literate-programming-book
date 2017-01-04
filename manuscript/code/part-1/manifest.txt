@@ -10,7 +10,7 @@ ap/
 		web.html
 ap/ 
 	web-lprc.md
-		web-lprc.js
+		lprc.js
 slp/ 
 	simple.md
 		teens.js
