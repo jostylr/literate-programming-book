@@ -91,7 +91,7 @@ Plugins are a way to have commonly used function easily packaged up and used.
 This is a file that gets executed upon startup. It is the place to load up
 plugins, define commands, directives, and defaults. 
 
-### Some internals
+### Compile Events
 
 Here we detail some of the parts of the program that one may want to access
 for a variety of reasons. Further details can be read in the literate source
