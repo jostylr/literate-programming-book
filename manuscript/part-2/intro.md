@@ -59,11 +59,10 @@ itself, but it could be needed there as well such as if you want to pull in
 secrets from a file outside of the repo and put it in the compiled code that
 is also stored outside of the repo. 
 
-### Conditional Compiling
+### Conditionals
 
-We may want to do one thing or another depending on the compilation context,
-e.g., development vs production though one can often do both at the same time,
-with multiple output targets. 
+We may want to do one thing or another depending on command line options or
+based on some programmatic condition. We can do that. 
 
 ### Domain Specific Languages
 

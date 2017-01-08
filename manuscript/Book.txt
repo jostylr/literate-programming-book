@@ -16,7 +16,7 @@ part-2/making-a-lprcjs-file.md
 part-2/other-languages.md
 part-2/making-a-plugin.md
 part-2/data-entry.md
-part-2/conditional-compiling.md
+part-2/conditionals.md
 part-2/domain-specific-languages.md
 part-2/making-a-subcommand.md
 part-2/linting.md

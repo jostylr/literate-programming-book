@@ -271,16 +271,19 @@ These methods return new, augmented arrays.
 
 ## Common Client Commands
 
-* `exec cmd1, cmd2, ...` This executes the commands on the commandline. The
-  standard input is the incoming input and the standard output is what is
-  passed along. 
-* `execfresh` Same as exec but no caching
-* `readfile name` Reads in file with filename. Starts at source directory.
-  This terminates old input and replaces with file contents.
-* `readdir name` Generates a list of files in named directory. This generates
-  an augmented array. 
-* `savefile name, encoding` Saves the input into the named file using the
-  encoding if specified. 
+* **exec** `exec cmd1, cmd2, ...` This executes the commands on the
+  commandline. The standard input is the incoming input and the standard
+  output is what is passed along. 
+* **execfresh** `execfresh` Same as exec but no caching
+* **readfile** `readfile name` Reads in file with filename. Starts at source
+  directory.  This terminates old input and replaces with file contents.
+* **readdir** `readdir name` Generates a list of files in named directory.
+  This generates an augmented array. 
+* **savefile** `savefile name, encoding` Saves the input into the named file
+  using the encoding if specified. 
+* **z** `z msg` will return the value in `msg` from the command line flag `-z
+  msg:value`. If the value contains multiple colons, it is interpreted as an
+  array and an array will be returned. 
 
 ## Full Client Commands
 
